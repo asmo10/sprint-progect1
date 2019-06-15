@@ -8,7 +8,7 @@ public class ConditionalIfOnly {
 		
 		Scanner scan = new Scanner(System.in);
 
-		System.out.println("Welcome to Okta To Slack");
+		System.out.println("Welcome to Okta To Slack. Hello");
 
 		int lengthOfName = scan.nextInt();
 
