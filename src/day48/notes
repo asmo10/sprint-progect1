@@ -1,0 +1,120 @@
+Day 48
+Inheritance in Java
+
+there are 4 part of OOP:
+  -encopsulation
+  -inheritance
+  -abstraction
+  -polymorhism
+  
+  In a single class we can put:
+  -instance variable
+  -methods
+  -constructors
+  -static block
+  -init block
+  -static methods
+  -static variables
+  
+  Inheritance:
+       When one class acquired/inherits variables  and methods from another class
+           Parent class
+           child class inherits methods and variables from parents class
+    
+     Is - A relation 
+     
+     Parent class: Drink
+     Child class: Coffee
+     Coffee Is - A drink
+     Tea Is - A drink
+     Smoothie Is-A Drink  
+     
+     
+     Inheritance is process when once class acquires the properties of another class.
+     Inherits methods and Variables from another class
+     
+  Extends keyword: is used to establish inheritance relation between classes                  
+  Parent class: Drink
+  Child class: Coffee
+  
+  public class Drink{
+      String name;
+  }
+  
+  public class Coffee extends Drink{
+          -reusable code
+          -easier to maintain 
+          -good programming design teschnique
+  }
+  =========================================================
+  
+  Drink: parent class    (naming same thing)
+         supper class 
+         base class
+  
+  Coffee: child class    (naming same thing)
+          sub class
+          derived class
+          
+ ========================= 
+  Drink > Coffee > Cappucino
+  
+  Drink > Tea > Green tea > jasmine+GreenTea
+  
+  public class Drink{
+        String name;
+  }
+  
+  public class Coffee extends Drink{
+         int caffeineCount;
+  }
+  
+  =========================
+  Variables and methods in Drink class is available/inherited to Coffee class.
+  
+  If Coffee class adds its own   variable or method, it will not be available for drink class.
+  
+  =============================
+  
+  
+  public class Drink{
+        String name;
+  }
+  
+  public class Coffee extends Drink{
+         int caffeineCount;
+  }
+  
+  public class Tea extends Drink{
+  
+  }
+  
+         Drink
+ 
+    Coffee     Tea
+  
+  
+  Java does not support multiple inheritan:
+  Coffee -> Drink 
+         -> Beverage
+         
+ public class Coffee extends Drink, beverage{
+    
+ }        
+  Above code will not work in java. In Java a class can extend only one class. Class can have only parent/super class
+  ==============================
+  
+  Super/Parent/Base class:
+       Vehicle: makeAndModel
+                year
+                maxSpeed
+                
+ Sub/child Class:
+        Car: 
+  
+ CarMax => main method is here 
+          there is no inheritance relation between carMax and Vehicle or Car.
+          We are just creating objects there.
+          It is just a runner class
+----------------------------------------------------------------------------------------------------------------------------------
+
